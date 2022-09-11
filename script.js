@@ -1,6 +1,7 @@
 "use strict"
 $(document).ready(function(){
     $('#form1').submit(function() {
+        
         // block user actions while waiting for a response from the server
         document.querySelector('#name').disabled    = true;
         document.querySelector('#tel').disabled     = true;
@@ -8,10 +9,12 @@ $(document).ready(function(){
         document.querySelector('#number').disabled  = true;
         document.querySelector('button').hidden     = true;
         document.querySelector('.waiting').hidden   = false;
+
         let nameValue    = $('#name').val(),
             telValue     = $('#tel').val(),
             emailValue   = $('#email').val(),
             numberValue  = $('#number').val();
+
         $.ajax({
             method: "POST",
             url: "calculating.php",
@@ -31,5 +34,6 @@ $(document).ready(function(){
             document.querySelector('.waiting').hidden   = true;
             // alert( msg ); // just for testing and debugging
         });
+
     })
 });

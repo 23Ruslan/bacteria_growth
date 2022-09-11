@@ -24,9 +24,9 @@ final class FibonacciOOP {
         }
         return $result;
     }
-    public function fibonacciNumbersBinet() : ?string { // formula similar to Binet formula for Fibonacci numbers
-        // from the problem statement: sum(m) = 8sum(m-1) + 13sum(m-2)
-        // ( (11+2*sqrt(29)) (4+sqrt(29))^(n-1) - (11-2*sqrt(29)) (4-sqrt(29))^(n-1) ) / (2sqrt(29))
+    public function fibonacciNumbersBinet() : ?string { // formula similar to Binet formula for Fibonacci numbers:
+        // from the problem statement, the number of all bacteria is sum(n) = 8sum(n-1) + 13sum(n-2), then -->
+        // sum(n) = ( (11+2sqrt(29)) (4+sqrt(29))^(n-1) - (11-2sqrt(29)) (4-sqrt(29))^(n-1) ) / (2sqrt(29) )
         bcscale(1000); // php extension for high precision numbers
         $sqrt1 = bcsqrt('29');
         $sqrt2 = bcmul('2', $sqrt1);
