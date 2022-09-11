@@ -1,0 +1,63 @@
+* {box-sizing: border-box} 
+  input { 
+  width: 100%; 
+  border: none; 
+  background: #d6cccc; 
+  padding: 16px; 
+  margin: 6px 0 21px 0; 
+  display: inline-block; 
+} 
+input:focus { 
+  background-color: rgb(190, 119, 119); 
+  outline: none; 
+} 
+output {
+word-wrap: break-word;
+}
+hr { 
+  border: 2px solid #f1f1f1; 
+  margin-bottom: 26px; 
+} 
+.green {
+  color: green
+}
+.red {
+  color: red
+}
+button { 
+  padding: 13px 29px; 
+  margin: 9px 0; 
+  background-color: #4CAF50; 
+  color: white; 
+  width: 100%; 
+  cursor: pointer; 
+  opacity: 0.8; 
+  border: none; 
+} 
+.waiting {
+  background-color: #bec4be; 
+}
+button:hover { 
+  opacity:1; 
+}
+button { 
+  float: left; 
+  width: 50%; 
+  padding: 14px 20px;
+} 
+.container {
+  padding: 16px; 
+} 
+.clearfix::after {
+  content: ""; 
+  clear: both; 
+  display: table; 
+} 
+form {
+  border:1px solid rgb(180, 209, 76)
+}
+@media screen and (max-width: 790px) { /* frontend option for small monitors */
+  button { 
+    width: 100%; 
+  } 
+}

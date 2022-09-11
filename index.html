@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bacterial growth</title>
+    <link rel="shortcut icon" href="https://game.link2site.site/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script> 
+</head>
+<body>
+<main>
+  <form id="form1" action="javascript:void(0);" method="post"> 
+  <div class="container"> 
+    
+    <label>At the first tick we have 1 <span class="green">green</span> and 1 <span class="red">red</span> bacterium. Each next tick of time, 
+      a <span class="green">green</span> bacterium turns into 3 <span class="green">green</span> and 4 <span class="red">red</span> ones,
+      and each <span class="red">red</span> bacterium turns into 7 <span class="green">green</span> and 5 <span class="red">red</span> ones.
+    </label>
+
+    <br><hr><label for="name"><b>First Name</b></label> 
+    <input type="text" id="name" placeholder="Enter your first name" name="name" required minlength="2" maxlength="30">
+
+    <label for="tel"><b>Tel</b></label> 
+    <input type="number" id="tel" placeholder="Enter your tel" name="tel" required minlength="3" maxlength="20">
+
+    <label for="email"><b>Email</b></label> 
+    <input type="email" id="email" placeholder="Введите вашу почту" name="email" required minlength="3" maxlength="40"> 
+
+    <label for="number"><b>Number of clock ticks (1-1000)</b></label> 
+    <input type="number" id="number" placeholder="Enter number of clock ticks" name="number" required min="1" max="1000">
+
+    <hr><label for="result"><b>The number of all bacteria that appeared during this time</b></label><br>
+    <span><output type="number" id="result" name="result"><em>You will see the result here</em></output></span><br><br>
+
+    <div class="clearfix">
+      <button form="form1" type="submit">Calculate</button>
+      <button class="waiting" hidden>Wait for the calculations...</button> 
+    </div> 
+
+  </div> 
+</form>
+</main>
+</body>
+</html>
